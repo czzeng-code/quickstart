@@ -8,9 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>Web学习起步</title>
+    <title>首页</title>
   </head>
   <body>
- Hello, 开始学习Java Web
+    <h2>首页</h2>
+<%--    <h2>欢迎你：<%=request.getAttribute("username")%></h2>--%>
+    <ul>
+        <li>
+            <a href="person.jsp">个人中心</a>
+        </li>
+
+        <li>
+            客户端
+        </li>
+    </ul>
+    <h2>欢迎您：<%=session.getAttribute("username")%></h2>
+    <a href="login.html">点击返回登陆</a>
   </body>
 </html>
